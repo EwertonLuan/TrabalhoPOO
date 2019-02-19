@@ -2,7 +2,6 @@
 <html xmlns:th="http://thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
-    <!--<meta charset="UTF-8">-->
     <title>Cadastro de aluno</title>
 </head>
 <body>
@@ -14,9 +13,6 @@
     curso: <input type="text" th:value="${aluno.curso}" name="curso"/>
     matricula: <input type="number" th:value="${aluno.matricula}" name="matricula"/>
     login: <input type="text" th:value="${aluno.login}" name="login" readonly="true"/>
-
-    <!--Senha: <input type="password" th:value="${aluno.senha}" name="senha"/>-->
-    <!--codigo: <input type="number" th:value="${aluno.codigo}" name="codigo"/>-->
     <button type="submit">Salvar</button>
 
 </form>

@@ -29,11 +29,10 @@ public class JdbcConfiguration {
     public DataSource buildDataSource() throws NamingException {
         HikariDataSource dataSource = new HikariDataSource();
 
-        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/cadastroapp");
-        dataSource.setUsername("root");
-        dataSource.setPassword("hardstyle");
+        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/databse");
+        dataSource.setUsername("usuario");
+        dataSource.setPassword("password");
         System.out.println("Conectou com o db");
-
 
         return dataSource;
     }

@@ -36,9 +36,7 @@ public class AlunoController {
     @RequestMapping(value = "/aluno/perfil", method = RequestMethod.POST)
     public String alunoUp(Aluno aluno){
 
-        System.out.println(aluno.getUsername());
-
-        alunoService.updateAluno(aluno);
+        alunoService.updateUser(aluno);
 
         return "redirect:/aluno/perfil";
     }
@@ -47,9 +45,7 @@ public class AlunoController {
     public ModelAndView listaEventos(){
         ModelAndView mv = new ModelAndView("aluno/alunoUpdate");
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-//        System.out.println(auth.getName());
         Aluno aluno = alunoService.findUserByLogin(auth.getName());
-//        System.out.println(aluno.getUsername());
         mv.addObject("aluno", aluno);
         return mv;
     }

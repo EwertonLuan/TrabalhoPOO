@@ -3,21 +3,20 @@ package com.project.cadastro.model;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
 @Entity
-@DiscriminatorValue(value = "U")
 public class Usuario extends Pessoa implements UserDetails {
 
+    @Id
     private String login;
     private String senha;
-    private BCryptPasswordEncoder encoder =  new BCryptPasswordEncoder();
+
 
     public String getLogin() {
         return login;

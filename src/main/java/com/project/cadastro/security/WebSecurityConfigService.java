@@ -28,10 +28,6 @@ public class WebSecurityConfigService extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and().formLogin().permitAll()
                 .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
-
-//                .antMatchers(HttpMethod.GET, "/aluno/up").hasRole("USER")
-//                        .antMatchers(HttpMethod.GET, "/cadastrarEvento").hasRole("ADMIN")
-//                .antMatchers(HttpMethod.POST, "/cadastrarEvento").hasRole("ADMIN")
     }
 
     @Override
