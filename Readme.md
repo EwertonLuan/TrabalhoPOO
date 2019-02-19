@@ -48,3 +48,9 @@ Atualizar um usuario por login
 `GET /deletarAluno`
 
 Deletar um aluno por login
+
+### Referncias
+* [Spring 4 MVC CRUD Operations with Spring JDBC Template and Mysql Database Tutorial](https://www.jackrutorial.com/2018/01/spring-mvc-crud-operations-with-spring-jdbc-template-and-mysql-database-tutorial.html)
+* [Curso Spring Boot](https://github.com/MichelliBrito/cursospringboot)
+* [Tipos de Herança com o hibernate](https://www.devmedia.com.br/tipos-de-heranca-no-hibernate/28641)
+* [Implementando o Data Access Object no Java EE](https://www.devmedia.com.br/implementando-o-data-access-object-no-java-ee/33339)
